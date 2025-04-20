@@ -225,9 +225,10 @@ Returns:
 
 ---
 
-## ✅ Final Notes
+## Final Notes
 
 - Ensure your NewsAPI key is active and has access to `everything` endpoint
 - Ensure PostgreSQL container is reachable with proper `.env` configuration
+- Ensure to use a proper database connection for Locan and Docker in `.env` configuration
 - Use Swagger UI at `/docs` to interact with all secured endpoints
 
