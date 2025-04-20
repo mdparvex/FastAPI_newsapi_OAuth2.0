@@ -36,7 +36,7 @@ cd FastAPI_newsapi_OAuth2.0
 pip install -r requirements.txt
 ```
 Comment database configuration in for Docker and uncomment for local in .env file
----
+
 
 ## How to Run the Server
 
