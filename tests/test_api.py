@@ -33,9 +33,7 @@ def get_auth_header():
     return {"Authorization": f"Bearer {token}"}
 
 
-# ------------------
-# 🔐 Auth Tests
-# ------------------
+#Auth tests
 
 def test_token_success():
     response = client.post("/token", headers=get_basic_auth_header())
@@ -49,9 +47,7 @@ def test_token_invalid_credentials():
     assert response.status_code == 401
 
 
-# ------------------
-# 📰 News API Tests
-# ------------------
+#News API test
 
 @patch("app.utils.fetch_news")
 def test_get_all_news(mock_fetch_news):
