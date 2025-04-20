@@ -35,7 +35,7 @@ cd FastAPI_newsapi_OAuth2.0
 ```bash
 pip install -r requirements.txt
 ```
-Comment database configuration in for Docker and uncomment for local in .env file
+Comment database configuration in .env file for Docker and uncomment for local
 
 
 ## How to Run the Server
@@ -49,7 +49,7 @@ uvicorn app.main:app --reload
 Access it at: http://localhost:8000/docs
 
 ### Run with Docker Compose
-Comment database configuration in for Docker and uncomment for local in .env file
+Comment database configuration in .env file for local and uncomment for Docker
 ```bash
 docker-compose up --build
 ```
