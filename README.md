@@ -17,7 +17,7 @@ This FastAPI project integrates with the NewsAPI to:
 
 ---
 
-## 🛠 Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -48,7 +48,7 @@ uvicorn app.main:app --reload
 
 Access it at: [http://localhost:8000](http://localhost:8000)
 
-### 🐳 Run with Docker Compose
+### Run with Docker Compose
 
 ```bash
 docker-compose up --build
