@@ -35,7 +35,7 @@ cd FastAPI_newsapi_OAuth2.0
 ```bash
 pip install -r requirements.txt
 ```
-
+Comment database configuration in for Docker and uncomment for local in .env file
 ---
 
 ## How to Run the Server
@@ -46,10 +46,10 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-Access it at: [http://localhost:8000](http://localhost:8000)
+Access it at: http://localhost:8000/docs
 
 ### Run with Docker Compose
-
+Comment database configuration in for Docker and uncomment for local in .env file
 ```bash
 docker-compose up --build
 ```
@@ -65,11 +65,6 @@ Then open: http://localhost:8000/docs
 ```bash
 # From the root directory where main.py is under /app
 PYTHONPATH=. pytest tests/ --disable-warnings -v
-```
-
-> All external API calls are mocked using `unittest.mock.patch`.
-
----
 
 ## How to Use Docker
 
@@ -117,7 +112,7 @@ Returns:
 Authorization: Bearer <access_token>
 ```
 
-use client_id:testuser (tsting perpose for me defined in .env file) , client_secret:testuser - into Swagger UI Authorize dialog.
+Use client_id:testuser (testing purpose for me defined in .env file), client_secret:testuser - in Swagger UI Authorize dialog.
 
 ---
 
