@@ -1,0 +1,30 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment
+#.env
+.venv
+env/
+venv/
+ENV/
+
+# Environment files
+#*.env
+
+# Pytest cache
+.pytest_cache/
+
+# VSCode settings
+.vscode/
+
+
+# Unit test & mock files
+tests/__pycache__/
+tests/*.pyc
+
