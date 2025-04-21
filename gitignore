@@ -3,7 +3,7 @@
 __pycache__/
 */__pycache__/
 
-# Virtual environment
+# Virtual environment and .env file
 *.env
 .env
 .venv
@@ -11,8 +11,6 @@ env/
 venv/
 ENV/
 
-# Environment files
-#*.env
 
 # Pytest cache
 .pytest_cache/
