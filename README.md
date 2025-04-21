@@ -28,14 +28,19 @@ cd FastAPI_newsapi_OAuth2.0
 
 ### 2. Create a `.env` File
 
--I uploaded .env file for evaluation perpose
+```env
+NEWS_API_KEY=your_news_api_key
+CLIENT_ID=testuser
+CLIENT_SECRET=testuser
+SECRET_KEY=your_secret_key
+ALGORITHM=HS256
+BASE_URL=https://newsapi.org/v2
 
-### 3. Install Requirements (Optional - for local testing)
-
-```bash
-pip install -r requirements.txt
+POSTGRES_DB=newsdb
+POSTGRES_USER=user
+POSTGRES_PASSWORD=password
+DATABASE_URL=postgresql://user:password@db:5432/newsdb
 ```
-Comment database configuration in .env file for Docker and uncomment for local
 
 
 ## How to Run the Server
@@ -49,7 +54,7 @@ uvicorn app.main:app --reload
 Access it at: http://localhost:8000/docs
 
 ### Run with Docker Compose
-Comment database configuration in .env file for local and uncomment for Docker
+
 ```bash
 docker-compose up --build
 ```
