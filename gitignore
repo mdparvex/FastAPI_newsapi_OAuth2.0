@@ -2,13 +2,9 @@
 # Byte-compiled / optimized / DLL files remove
 __pycache__/
 */__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
 
 # Virtual environment
+*.env
 .env
 .venv
 env/
