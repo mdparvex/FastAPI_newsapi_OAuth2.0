@@ -105,8 +105,10 @@ Authorization: Basic base64(client_id:client_secret)
 ```
 
 
-```json
+```http
 http://localhost:8000/token
+```
+```json
 Headers:{
       headers: "Authorization: Basic dGVzdHVzZXI6dGVzdHVzZXI="
 }
