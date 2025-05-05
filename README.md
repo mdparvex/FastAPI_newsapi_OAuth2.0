@@ -104,12 +104,12 @@ docker-compose up --build
 Authorization: Basic base64(client_id:client_secret)
 ```
 
-Example (in curl):
-```bash
-set headers: "Authorization: Basic dGVzdHVzZXI6dGVzdHVzZXI="
-```
+
 ```http
  http://localhost:8000/token
+Headers:{
+      headers: "Authorization: Basic dGVzdHVzZXI6dGVzdHVzZXI="
+}
 ```
 
 Returns:
