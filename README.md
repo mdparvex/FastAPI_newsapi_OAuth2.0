@@ -150,7 +150,7 @@ Returns:
   "page": 1,
   "pageSize": 10,
   "totalResults": 134,
-  "next": "/news?skip=10&limit=10&query=technology",
+  "next": "/news?skip=10&limit=10&query=news",
   "previous": null,
   "articles": [ ... ]
 }
