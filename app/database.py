@@ -15,7 +15,7 @@ for i in range(10):
         engine = create_engine(DATABASE_URL)
         break
     except OperationalError:
-        print("🔁 Waiting for DB to be ready...")
+        print("Waiting for DB to be ready...")
         time.sleep(2)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
