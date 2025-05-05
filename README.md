@@ -75,11 +75,10 @@ Then open: http://localhost:8000/docs
 ## How to Run Tests
 
 ### Run All Tests with Pytest:
-
-```bash
 # From the root directory where main.py is under /app
+```bash
 pytest tests
-
+```
 ## How to Use Docker
 
 Make sure Docker is installed, then:
