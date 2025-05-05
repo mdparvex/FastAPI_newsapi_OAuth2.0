@@ -105,9 +105,11 @@ Authorization: Basic base64(client_id:client_secret)
 ```
 
 Example (in curl):
-
 ```bash
-curl -X POST http://localhost:8000/token   -H "Authorization: Basic dGVzdHVzZXI6dGVzdHVzZXI="
+set headers: "Authorization: Basic dGVzdHVzZXI6dGVzdHVzZXI="
+```
+```http
+ http://localhost:8000/token
 ```
 
 Returns:
