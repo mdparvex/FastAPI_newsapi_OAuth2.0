@@ -62,16 +62,6 @@ uvicorn app.main:app --reload
 
 Access it at: http://localhost:8000/docs
 
-### Run with Docker Compose
-
-```bash
-docker-compose up --build
-```
-
-Then open: http://localhost:8000/docs
-
----
-
 ## How to Run Tests
 
 ### Run All Tests with Pytest:
@@ -81,16 +71,20 @@ pytest tests
 ```
 ## How to Use Docker
 
-Make sure Docker is installed, then:
-
-```bash
-docker-compose up --build
-```
 
 ### Docker Compose Includes:
 
 - `web` - FastAPI container
 - `db` - PostgreSQL container with volume for persistence
+
+---
+### Run with Docker Compose
+
+```bash
+docker-compose up --build
+```
+
+Then open: http://localhost:8000/docs
 
 ---
 
