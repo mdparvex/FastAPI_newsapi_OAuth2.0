@@ -65,7 +65,7 @@ Access it at: http://localhost:8000/docs
 ## How to Run Tests
 
 ### Run All Tests with Pytest:
-# From the root directory where main.py is under /app
+From the root directory where main.py is under /app
 ```bash
 pytest tests
 ```
