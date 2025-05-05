@@ -45,14 +45,39 @@ DATABASE_URL=postgresql://user:password@db:5432/newsdb
 
 ## How to Run the Server
 
-### ▶Run with Uvicorn (Local)
-
+### Run with Uvicorn (Local)
+Create a virtual environment
+```bash
+python -m venv <environment_name>
+```
+Activate the virtual environment
+```bash
+cd <environment_name>\Scripts
+activate
+```
+Go to the project root directory and run
 ```bash
 uvicorn app.main:app --reload
 ```
 
 Access it at: http://localhost:8000/docs
 
+## How to Run Tests
+
+### Run All Tests with Pytest:
+From the root directory where main.py is under /app
+```bash
+pytest tests
+```
+## How to Use Docker
+
+
+### Docker Compose Includes:
+
+- `web` - FastAPI container
+- `db` - PostgreSQL container with volume for persistence
+
+---
 ### Run with Docker Compose
 
 ```bash
@@ -60,29 +85,6 @@ docker-compose up --build
 ```
 
 Then open: http://localhost:8000/docs
-
----
-
-## How to Run Tests
-
-### Run All Tests with Pytest:
-
-```bash
-# From the root directory where main.py is under /app
-PYTHONPATH=. pytest tests/ --disable-warnings -v
-
-## How to Use Docker
-
-Make sure Docker is installed, then:
-
-```bash
-docker-compose up --build
-```
-
-### Docker Compose Includes:
-
-- `web` - FastAPI container
-- `db` - PostgreSQL container with volume for persistence
 
 ---
 
@@ -96,10 +98,14 @@ docker-compose up --build
 Authorization: Basic base64(client_id:client_secret)
 ```
 
-Example (in curl):
 
-```bash
-curl -X POST http://localhost:8000/token   -H "Authorization: Basic dGVzdHVzZXI6dGVzdHVzZXI="
+```http
+http://localhost:8000/token
+```
+```json
+Headers:{
+      headers: "Authorization: Basic dGVzdHVzZXI6dGVzdHVzZXI="
+}
 ```
 
 Returns:
@@ -138,7 +144,7 @@ Returns:
   "page": 1,
   "pageSize": 10,
   "totalResults": 134,
-  "next": "/news?skip=10&limit=10&query=technology",
+  "next": "/news?skip=10&limit=10&query=news",
   "previous": null,
   "articles": [ ... ]
 }
