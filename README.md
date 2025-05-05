@@ -78,7 +78,7 @@ Then open: http://localhost:8000/docs
 
 ```bash
 # From the root directory where main.py is under /app
-PYTHONPATH=. pytest tests/ --disable-warnings -v
+pytest tests
 
 ## How to Use Docker
 
