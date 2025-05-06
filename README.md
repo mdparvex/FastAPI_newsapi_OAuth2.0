@@ -46,7 +46,7 @@ DATABASE_URL=postgresql://user:password@db:5432/newsdb
 ## Setup locally
 Create a virtual environment
 ```bash
-python -m venv <environment_name>
+python -m virtualenv <environment_name>
 ```
 Activate the virtual environment
 ```bash
