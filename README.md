@@ -43,9 +43,7 @@ DATABASE_URL=postgresql://user:password@db:5432/newsdb
 ```
 
 
-## How to Run the Server
-
-### Run with Uvicorn (Local)
+## Setup locally
 Create a virtual environment
 ```bash
 python -m venv <environment_name>
@@ -55,6 +53,11 @@ Activate the virtual environment
 cd <environment_name>\Scripts
 activate
 ```
+install requirements.txt
+```bash
+pip install -r requirements.txt
+```
+## How to Run the Server
 Go to the project root directory and run
 ```bash
 uvicorn app.main:app --reload
